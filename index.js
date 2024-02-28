@@ -9,9 +9,11 @@ const fetchData = (postcode) => {
 
         firstTenResturants.forEach(restaurant => {
             // console.log(restaurant.name)
-            
-            // console.log(restaurant.rating.starRating)
-            // console.log(restaurant.address.firstLine + ' ' + restaurant.address.postalCode)
+            restaurant.cuisines.slice(0, 2).forEach(cuisine => {
+                console.log(cuisine.name)
+            })
+            console.log(restaurant.rating.starRating)
+            console.log(restaurant.address.firstLine + ' ' + restaurant.address.postalCode)
 
 
         });
