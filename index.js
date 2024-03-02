@@ -13,18 +13,22 @@ const fetchData = (postcode) => {
             restaurantDiv.classList.add('restaurant');
 
             const nameElement = document.createElement('p');
+            nameElement.classList.add('name');
             nameElement.textContent = 'Name: ' + restaurant.name;
             restaurantDiv.appendChild(nameElement);
 
             const cuisinesElement = document.createElement('p');
+            cuisinesElement.classList.add('cuisine');
             cuisinesElement.textContent = 'Cuisine: ' + restaurant.cuisines.slice(0, 2).map(cuisine => cuisine.name).join(', ');
             restaurantDiv.appendChild(cuisinesElement);
 
             const ratingElement = document.createElement('p');
+            ratingElement.classList.add('rating');
             ratingElement.textContent = 'Rating: ' + restaurant.rating.starRating;
             restaurantDiv.appendChild(ratingElement);
 
             const addressElement = document.createElement('p');
+            addressElement.classList.add('address');
             addressElement.textContent = 'Address: ' + restaurant.address.firstLine + ' ' + restaurant.address.postalCode;
             restaurantDiv.appendChild(addressElement);
 
