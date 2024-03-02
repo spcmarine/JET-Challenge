@@ -1,11 +1,11 @@
 const postcode = 'RH121EP';
 
 const fetchData = (postcode) => {
-    fetch(`localhost/3000/${postcode}`)
+    fetch(`https://localhost/3000/${postcode}`)
     .then(response => response.json())
     .then(data => {
         const firstTenResturants = data.restaurants.slice(0, 10);
-        console.log(firstTenResturants);
+        // console.log(firstTenResturants);
 
         const mainContainer = document.querySelector('.main-container');;
 
@@ -16,6 +16,7 @@ const fetchData = (postcode) => {
             const nameElement = document.createElement('p');
             nameElement.textContent = 'Name: ' + restaurant.name;
             restaurantDiv.appendChild(nameElement);
+            console.log(restaurant.name)
 
             const cuisinesElement = document.createElement('p');
             cuisinesElement.textContent = 'Cuisine: ' + restaurant.cuisines.slice(0, 2).map(cuisine => cuisine.name).join(', ');

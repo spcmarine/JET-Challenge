@@ -18,7 +18,9 @@ app.get('/restaurants/:postcode', (req, res) => {
         return response.json();
     })
     .then(data => {
+        console.log('I have returned the data')
         res.json(data); 
+        
     })
     .catch(error => {
         console.error('Error fetching data:', error);
