@@ -29,7 +29,7 @@ To get started with this project, follow these steps:
   ```
 
 
-You should see the message 'Server listening on port 3000' appear in your terminal.
+You should see the message 'Server listening on port 3000' appear in your terminal. You will need to open a second terminal before entering the final command.
 
 4. **Open the HTML File**:
 - For Windows:
