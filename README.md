@@ -14,7 +14,7 @@ To get started with this project, follow these steps:
 
 1. **Clone the Repository**: Clone this repository to your local machine using the following command:
   ```
-  git clone <repository-url>
+  git clone https://github.com/spcmarine/JET-Challenge.git
   ```
 
 
