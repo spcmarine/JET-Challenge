@@ -1,7 +1,7 @@
 const postcode = 'RH121EP';
 
 const fetchData = (postcode) => {
-    fetch(`https://localhost/3000/${postcode}`)
+    fetch(`http://localhost:3000/restaurants/${postcode}`)
     .then(response => response.json())
     .then(data => {
         const firstTenResturants = data.restaurants.slice(0, 10);

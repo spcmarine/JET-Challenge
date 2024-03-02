@@ -3,10 +3,12 @@ const cors = require('cors');
 
 const app = express();
 const PORT = 3000;
-app.use(cors());
 
+app.use(cors());
 app.use(express.json());
 
+/*
+// 
 app.get('/restaurants/:postcode', (req, res) => {
     const { postcode } = req.params; 
     
@@ -20,12 +22,16 @@ app.get('/restaurants/:postcode', (req, res) => {
     .then(data => {
         console.log('I have returned the data')
         res.json(data); 
-        
     })
     .catch(error => {
         console.error('Error fetching data:', error);
         res.status(500).send('Error fetching data from the API');
     });
+});
+*/
+
+app.get('/restaurants/:postcode', (req, res) => {
+    res.send('hello I am a server');
 });
 
 app.listen(PORT, () => {
