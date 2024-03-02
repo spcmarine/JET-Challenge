@@ -1,10 +1,25 @@
+body {
+    background-color: #ff8100;;
+
+}
+
 .main-container {
     padding: 20px;
 }
 
 .restaurant {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
     padding: 10px;
+}
+
+.restaurant .name {
+    font-weight: bold;
+}
+
+.restaurant .cuisine {
+    font-style: italic;
 }
